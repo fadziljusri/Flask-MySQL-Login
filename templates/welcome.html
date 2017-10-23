@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+    
+{% block title %} Welcome Page {% endblock %}
+{% block content %}
+
+    Welcome, {{username}}
+    <form action="{{url_for('logout')}}">
+        <input type="submit" value="Logout"/>
+    </form>
+    
+{% endblock %}
